@@ -2,7 +2,7 @@
 title: "Running stochLAB"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Running_stochLAB}
+  %\VignetteIndexEntry{Running stochLAB}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -12,10 +12,6 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-```
-
-```{r setup}
-library(stochLAB)
 ```
 
 
@@ -40,7 +36,7 @@ etc.
 
 In addition, previous code underpinning core calculations for the extended model
 has been replaced by an alternative approach, resulting in significant gains in
-computational speed - over 30x faster than Masden's code. This optimization is
+computational speed over Masden's code. This optimization is
 particularly beneficial under a stochastic context, when core calculations are
 called repeatedly during simulations.
 
@@ -49,11 +45,11 @@ For a more detailed overview type `?stochLAB`, once installed!
 
 ## Installation
 
-<!-- You can install the released version of stochLAB from [CRAN](https://CRAN.R-project.org) with: -->
+You can install the released version of stochLAB from [CRAN](https://CRAN.R-project.org) with:
 
-<!-- ``` r -->
-<!-- install.packages("stochLAB") -->
-<!-- ``` -->
+``` r
+install.packages("stochLAB")
+```
 
 You can install the development version with:
 
@@ -72,6 +68,7 @@ seabird species and one turbine/wind-farm scenario, with fictional input
 parameter data.
 
 ```r
+library(stochLAB)
 # ------------------------------------------------------
 # Setting some of the required inputs upfront
 
